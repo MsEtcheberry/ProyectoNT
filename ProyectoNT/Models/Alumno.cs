@@ -18,7 +18,5 @@ namespace ProyectoNT.Models
             this.fechaNacimiento = fechaNacimiento;
             this.grado = grado;
         }
-        //todas las clases tiene que ser public class
-        //
     }
 }
