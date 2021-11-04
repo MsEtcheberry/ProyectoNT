@@ -9,6 +9,8 @@ namespace ProyectoNT.Models
 {
     public class Clase
     {
+        //Poner los displays de los atributos
+        //https://www.c-sharpcorner.com/blogs/validation-in-asp-net-mvc-using-dataannotations
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int idClase { get; set; }
