@@ -35,7 +35,7 @@ namespace ProyectoNT
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<ClasesParticularesDatabaseContext>(options => options.UseSqlServer(Configuration["ConnectionString:ProyectoClasesParticularesDBConnection"]));
+            services.AddDbContext<ClasesParticularesDatabaseContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:ProyectoClasesParticularesDBConnection"]));
 
             services.AddMvc().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
